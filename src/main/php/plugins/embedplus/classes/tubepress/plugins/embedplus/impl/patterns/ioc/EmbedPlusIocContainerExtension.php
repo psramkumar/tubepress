@@ -29,6 +29,18 @@ class tubepress_plugins_embedplus_impl_patterns_ioc_EmbedPlusIocContainerExtensi
             'tubepress_plugins_embedplus_impl_embedded_EmbedPlusPluggableEmbeddedPlayerService'
 
         )->addTag(tubepress_spi_embedded_PluggableEmbeddedPlayerService::_);
+
+        $container->register(
+
+            'tubepress_plugins_embedplus_impl_filters_embeddedtemplate_EmbedPlusHeightAdjuster',
+            'tubepress_plugins_embedplus_impl_filters_embeddedtemplate_EmbedPlusHeightAdjuster'
+        );
+
+        $container->register(
+
+            'tubepress_plugins_embedplus_impl_filters_galleryinitjs_GalleryInitJsEmbedPlusAdjuster',
+            'tubepress_plugins_embedplus_impl_filters_galleryinitjs_GalleryInitJsEmbedPlusAdjuster'
+        );
     }
 
     /**

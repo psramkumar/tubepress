@@ -10,6 +10,9 @@
  */
 class tubepress_plugins_embedplus_impl_embedded_EmbedPlusEmbeddedPlayerTest extends TubePressUnitTest
 {
+    /**
+     * @var tubepress_plugins_embedplus_impl_embedded_EmbedPlusPluggableEmbeddedPlayerService
+     */
     private $_sut;
 
     public function onSetup() {
@@ -20,6 +23,11 @@ class tubepress_plugins_embedplus_impl_embedded_EmbedPlusEmbeddedPlayerTest exte
     public function testGetName()
     {
         $this->assertEquals('embedplus', $this->_sut->getName());
+    }
+
+    public function testGetFriendlyName()
+    {
+        $this->assertEquals('EmbedPlus', $this->_sut->getFriendlyName());
     }
 
     public function testGetProviderName()
